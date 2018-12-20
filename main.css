@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Abel');
+
+body {
+	background-color: #FFECD5 ;  /*  PAGE COLOR  */
+	margin:0;
+
+}
+header {
+	background-color: #6fbcae ; /* */
+	padding-bottom:10px;
+	width:100%;
+}
+/*TEXT STYLES*/
+#title {
+	text-transform:uppercase;
+	font-size:27px;
+	color: white;
+	border-bottom: 2px solid #6fbcae;
+
+}
+#title:hover {
+	color: gray;
+	border-bottom: 2px solid white;  /*#549186*/
+}
+h1, h2 {
+	font-family: 'Abel', sans-serif;
+	color: #111111;
+	letter-spacing: 2px;
+	display:inline-block;
+}
+
+p {
+	font-family: 'Arvo', serif;
+	font-size:16px;
+	color: #111111;
+}
+.page_text {
+	border-top:1px solid #FFECD5;
+	width: 900px;
+	margin:auto;
+	line-height:30px;
+}
+.navbar {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.navbar ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+
+
+}
+.navbar li{
+  display:inline;
+
+
+}
+.navbar a{
+	padding:10px;
+	font-size: 20px;
+	font-family: 'Abel', sans-serif;
+  display:inline-block;
+	letter-spacing: 3px;
+	color: white;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom: 3px solid rgba(0,0,0,0);  /* invisible border, keeps navbar from doing the glitchy thing */
+	transition: all 280ms ease-in-out;
+
+}
+
+li a:hover {
+	transition: all 280ms ease-in-out;
+	letter-spacing: 6px;
+	color:gray;
+	border-bottom: 2px solid white;  /*underline link on hover*/
+}
+
+#active {
+	border-bottom: 2px solid white;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 70%;
+  height: 35%;
+  margin:auto;
+	text-align:center;
+	margin-bottom: 200px;
+}
+
+.flex-item {
+  width: 24%;
+  height: 150%;
+  margin: auto; /* spaces the items apart */
+	background-position: 50% 50%; /*centers image*/
+	background-size: cover;
+	display: flex; /* centers the text */
+	align-items: center;
+	justify-content: center; /*end*/
+	-moz-box-shadow:    3px 0px 8px 0px black; /*Box Shadow*/
+  -webkit-box-shadow: 3px 0px 8px 0px black;
+  box-shadow:         3px 0px 8px 0px gray;
+	transition: transform 0.5s ease-in-out;
+
+}
+
+/*FLOAT UPWARDS ON HOVER*/
+.flex-item:hover{
+	transform: translate(0px,-13px);
+  transition: transform 0.5s ease-in-out;
+}
+
+/*CAPTIONS ON IMAGES*/
+.flex-container p{
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+	color:white;
+	letter-spacing:1px;
+	font-size:20px;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+}
+
+.flex-container a {
+	text-decoration: none;
+}
+
+.item1 {
+	background-image: url('images/1.JPG');
+}
+.item2 {
+	background-image: url('images/2.jpg');
+}
+.item4 {
+	background-image: url('images/4.JPG');
+}
+
+/*PARALLAX SCROLLING*/
+.section1, .section2, .section3, .section4, .section5, .section6 {
+	opacity:0.95;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	position:relative;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption span.border {
+  color: #fff;
+	padding: 3px;
+  font-size: 25px;
+	font-style:italic;
+	background-color: rgba(128,128,128,0.75);
+}
+
+.blurb {
+	color: #777;
+	text-align:center;
+	margin:auto;
+	width:50%;
+	padding:10px;
+	line-height:1.5em;
+}
+
+h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font: 25px "Abel", sans-serif;
+	font-weight:bold;
+  color: #3a3a39;
+}
+
+.home {
+	border-bottom: 2px solid #70C1B3;
+	border-top: 2px solid #70C1B3;
+	padding: 5px;
+}
+
+.section1 {
+	background-image: url('images/DSC_0956.jpg');
+  min-height: 200px;
+	width:90%;
+	margin:auto;
+}
+
+.section3 {
+	background-image: url('images/code.jpg');
+	min-height:280px;
+}
+
+.section4 {
+	background-image: url('images/cookies.jpg');
+	opacity:0.85;
+	min-height:280px;
+}
+
+.section5 {
+	background-image: url("images/writing.jpg");
+	min-height:280px;
+}
+
+.section6 {
+	background-image: url("images/camera3.jpg");
+	min-height:280px;
+}
+
+.fa {
+	border-radius: 80%;
+	margin-left: 5px;
+	margin-bottom: 2px;
+	margin-top: 15px;
+	padding: 15px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.fa:hover {
+	opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.footer {
+	font-size: 12px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+header {
+	width:100%;
+}
+.navbar {
+	width:50%;
+}
+
+.flex-item {
+	width:15%;
+	height: 20%;
+}
+
+.flex-container {
+	width: 70%;
+}
+
+
+ }
